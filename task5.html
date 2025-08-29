@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pooja Gandham — Portfolio (Final Project)</title>
+  <link rel="stylesheet" href="task5.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <div class="brand">Pooja Gandham</div>
+
+      <button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="nav-list" aria-label="Open menu">
+        ☰
+      </button>
+
+      <ul id="nav-list" class="nav-links">
+        <li><a href="#home"     data-target="home"     class="active">Home</a></li>
+        <li><a href="#about"    data-target="about">About</a></li>
+        <li><a href="#features" data-target="features">Features</a></li>
+        <li><a href="#projects" data-target="projects">Projects</a></li>
+        <li><a href="#todo"     data-target="todo">To-Do</a></li>
+        <li><a href="#products" data-target="products">Products</a></li>
+        <li><a href="#contact"  data-target="contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="main" role="main">
+    
+    <section id="home" class="section">
+      <div class="hero">
+        <h1>Final Project & Optimization</h1>
+        <p>Capstone web app built with HTML, CSS & vanilla JavaScript — optimized for performance and responsiveness.</p>
+        <img class="hero-img lazy" width="820" height="320" data-src="https://contentwriting101.com/wp-content/uploads/2020/09/Build-Your-Portfolio.png" alt="Developer working on optimization">
+      </div>
+    </section>
+
+<section id="about" class="section hidden" aria-labelledby="about-h">
+  <h2 id="about-h">About Me</h2>
+  <p>
+    Hi, I’m <strong>Pooja Gandham</strong>, an aspiring <em>Full Stack Web Developer</em> passionate about building clean, 
+    user-friendly, and responsive web applications. I enjoy solving problems with code and turning ideas into interactive experiences.
+  </p>
+  <p>
+    My core skills include <strong>HTML, CSS, JavaScript</strong>, and I am continuously learning advanced technologies 
+    to grow into a professional developer. Through this project, I have combined front-end design, interactive features, 
+    and optimization techniques to showcase my learning journey.
+  </p>
+  <p>
+    Beyond coding, I love exploring new tools, improving performance, and designing apps that work seamlessly across devices.  
+    My goal is to create impactful digital solutions and grow as a versatile software engineer.
+  </p>
+</section>
+
+
+    
+    <section id="features" class="section hidden" aria-labelledby="feat-h">
+      <h2 id="feat-h">Optimization & Responsiveness</h2>
+      <ul class="features">
+        <li>⚡ Fast loads: single CSS & JS, lazy images</li>
+        <li>📱 Mobile-first & responsive layout</li>
+        <li>🌍 Cross-browser friendly (no external libs)</li>
+      </ul>
+    </section>
+
+    
+    <section id="projects" class="section hidden" aria-labelledby="proj-h">
+      <h2 id="proj-h">Projects</h2>
+      <div class="grid">
+        <article class="card"><h3>Portfolio Site</h3><p>Personal profile & project showcase.</p></article>
+        <article class="card"><h3>To-Do App</h3><p>LocalStorage-backed tasks.</p></article>
+        <article class="card"><h3>Product Listing</h3><p>Filter & sort demo.</p></article>
+      </div>
+    </section>
+
+    
+    <section id="todo" class="section hidden" aria-labelledby="todo-h">
+      <h2 id="todo-h">To-Do List</h2>
+      <div class="todo">
+        <input id="taskInput" class="input" type="text" placeholder="Add a task…" aria-label="New task">
+        <button id="addTaskBtn" class="btn">Add</button>
+      </div>
+      <ul id="taskList" class="list" aria-live="polite"></ul>
+    </section>
+
+    
+    <section id="products" class="section hidden" aria-labelledby="prod-h">
+      <h2 id="prod-h">Products</h2>
+      <div class="controls">
+        <label>Category
+          <select id="categoryFilter" class="input">
+            <option value="all">All</option>
+            <option value="electronics">Electronics</option>
+            <option value="fashion">Fashion</option>
+          </select>
+        </label>
+        <label>Sort
+          <select id="sortOption" class="input">
+            <option value="default">Default</option>
+            <option value="priceLow">Price: Low → High</option>
+            <option value="priceHigh">Price: High → Low</option>
+            <option value="rating">Rating: High → Low</option>
+          </select>
+        </label>
+        <button id="applyFilter" class="btn">Apply</button>
+      </div>
+      <div id="productList" class="grid"></div>
+    </section>
+
+   
+    <section id="contact" class="section hidden" aria-labelledby="contact-h">
+      <h2 id="contact-h">Contact</h2>
+      <form id="contactForm" class="card form" novalidate>
+        <label>Name<input required type="text" class="input" name="name" placeholder="Your name"></label>
+        <label>Email<input required type="email" class="input" name="email" placeholder="you@example.com"></label>
+        <label>Message<textarea class="input" name="message" rows="5" placeholder="Write your message…"></textarea></label>
+        <button type="submit" class="btn primary">Send</button>
+      </form>
+      <p style="margin-top:.6rem">📞 +91 7989592707 • ✉️ poojagandham10@gmail.com</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    © <span id="year"></span> Pooja Gandham • Final Project & Optimization
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
