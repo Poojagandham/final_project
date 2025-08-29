@@ -1,2 +1,6 @@
 # final_project
-https://www.linkedin.com/in/poojagandham/overlay/1756453529160/single-media-viewer/?profileId=ACoAAE0fY9IBg4Nj_yUO55IOrx9u3JCUf--LRVk
+🚀 Completed a full project using HTML, CSS & JavaScript!
+💼 Built a responsive portfolio
+📝 Created a to-do app with localStorage
+🛍️ Developed a product page with filter & sort options
+Great hands-on learning experience! 💻✨
